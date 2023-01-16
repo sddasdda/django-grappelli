@@ -77,7 +77,10 @@
 
             // modify the element and create the button
             this.element.addClass("hasTimepicker");
+            this.element.readonly = true;
             this.element.prop("readonly", true);
+            $("#id_time_from").prop("readonly", true);
+            console.log(this.element);
             this.button = $('<button type="button" class="ui-timepicker-trigger"></button>');
             this.element.after(this.button);
 
